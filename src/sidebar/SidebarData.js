@@ -8,7 +8,7 @@ import * as RiIcons from "react-icons/ri";
 export const SidebarData = [
     {
         title: "my Apps",
-        path: "/my",
+        path: "/my/tac",
         icon: <AiIcons.AiFillHome />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,

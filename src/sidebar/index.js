@@ -14,14 +14,15 @@ function SideMenu() {
     return (
         <Router>
             <Sidebar />
+            <div className="home">
             <Routes>
                 <Route
                     path="/my/tac"
-                    element={<div className="home"><Tic /></div>}
+                    element={<div><Tic /></div>}
                 />
                 <Route
                     path="/my/table"
-                    element={<div className="home"><TableData /></div>}
+                    element={<div><TableData /></div>}
                 />
                 {/*<Route*/}
                 {/*    path="/about-us/aim"*/}
@@ -37,7 +38,9 @@ function SideMenu() {
                 {/*    element={<Support />}*/}
                 {/*/>*/}
             </Routes>
+            </div>
         </Router>
+
     );
 }
 
