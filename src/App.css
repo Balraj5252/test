@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-.home,
+.sidebarhome,
 .services,
 .reports,
 .contact,
@@ -11,6 +11,18 @@
 .support {
   display: flex;
   margin-left: 260px;
+  font-size: 2rem;
+}
+
+
+.home,
+.services,
+.reports,
+.contact,
+.events,
+.support {
+  display: flex;
+  margin-left: 20px;
   font-size: 2rem;
 }
 
