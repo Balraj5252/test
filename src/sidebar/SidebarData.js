@@ -23,6 +23,11 @@ export const SidebarData = [
                 title: "Table",
                 path: "/my/table",
                 icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: "CharPrint",
+                path: "/my/charPrint",
+                icon: <IoIcons.IoIosPaper />,
             }
         ],
     }
