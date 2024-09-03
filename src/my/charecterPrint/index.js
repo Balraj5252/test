@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {CustomInput} from "../util";
 
 const CharacterPrint = () => {
     const [str, setStr] = useState("");
@@ -45,20 +46,17 @@ const CharacterPrint = () => {
             <p> example input : a1b4</p>
             <p> example output : abbbb</p>
                 </span>
-            <div style={{marginLeft : "20px",marginTop: "20px", alignContent: " center"}}>
-                <input
-                    style={{padding: 10}}
-                    onChange={onChangeInput}
-                    value={str}
-                    />
-
-                <button style={{marginLeft: 20, padding: 10, color: "white",background: "#058efb"}}
-                        onClick={printString}
-                        disabled={!valid}
-                >
-                    Submit
-                </button>
-            </div>
+            <CustomInput
+                props = {{
+                    label: "please give input string : ",
+                    onChangeInput: onChangeInput,
+                    type : "string",
+                    value: str,
+                    isButton: true,
+                    onButtonClick :printString,
+                    valid : valid
+            }}
+            />
                 <p>{valid ? null :
                     <span style={{fontSize : "20px", color: "#ee3131"}}>
                         Please enter a valid string

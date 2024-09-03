@@ -28,6 +28,11 @@ export const SidebarData = [
                 title: "CharPrint",
                 path: "/my/charPrint",
                 icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: "Patterns",
+                path: "/my/patterns",
+                icon: <IoIcons.IoIosPaper />,
             }
         ],
     }
