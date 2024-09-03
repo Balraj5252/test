@@ -26,7 +26,7 @@ const RowStars = () => {
                 }}
             />
 
-            <p style={{fontSize : "40px", color: "#4f567c", marginTop : "20px", flex: "fit-content"}}> {stars}</p>
+            <span style={{fontSize : "40px", color: "#4f567c"}}> {stars} </span>
         </div>
     );
 }

@@ -9,6 +9,6 @@ export const patternData = [
     {
         id: 1,
         name: "number of stars in column",
-        example: <span> * <br/> *<br/>* </span>
+        example: <span>*<br/>*<br/>*</span>
     }
 ];

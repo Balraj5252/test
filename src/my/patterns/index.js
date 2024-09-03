@@ -25,22 +25,22 @@ const Patterns = () => {
     }
     return (
         <div>
-            <div style={{margin: "20px"}}>
-                <label style={{fontSize : "20px", marginRight: "20px"}}>
+            <div style={{margin: "20px", border: '2px solid cornflowerblue', textAlign:"center"}}>
+                <span style={{fontSize : "20px", marginRight: "20px"}}>
                     please select pattern :
-                </label>
-                <select onChange={ssp} style={{padding: 10}} >
-                    {patternData.map((item, index) => {
+                </span>
+                <select onChange={ssp} >
+                    {patternData.map((item) => {
                         return(
-                            <option value={item.id} style={{background:"blue"}}>{item.name}</option>
+                            <option value={item.id} key={item.id}>{item.name}</option>
                         );
                     })}
                 </select>
             </div>
-            <div>
+            <div style={{margin: "20px", border: '2px solid cornflowerblue', textAlign:"center"}}>
                 {selectedPattern.example}
             </div>
-            <div>
+            <div style={{margin: "20px", border: '2px solid cornflowerblue', textAlign:"center"}}>
                 {switchCase()}
             </div>
 

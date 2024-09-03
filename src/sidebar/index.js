@@ -35,12 +35,17 @@ const NavIcon = styled(Link)`
 let sideStyle = "sidebarhome";
 let marginstyle = "200px";
 const SideMenu = () => {
+    const { innerWidth: width } = window;
+    console.log(width)
+    let widthReq = width - (width * 0.19);
     const [sidebar, setSidebar] = useState(true);
     const showSidebar = () => {
         if (sidebar) {
+            widthReq = width - (width * 0.19);
             sideStyle = "home";
             marginstyle = "20px";
         } else {
+            widthReq = width - 200;
             sideStyle = "sidebarhome";
             marginstyle = "200px";
         }
@@ -71,19 +76,19 @@ const SideMenu = () => {
             <Routes>
                 <Route
                     path="/my/tac"
-                    element={<div><Tic /></div>}
+                    element={<Tic />}
                 />
                 <Route
                     path="/my/table"
-                    element={<div><TableData /></div>}
+                    element={<TableData />}
                 />
                 <Route
                     path="/my/charPrint"
-                    element={<div><CharacterPrint /></div>}
+                    element={<CharacterPrint />}
                 />
                 <Route
                     path="/my/patterns"
-                    element={<div><Patterns /></div>}
+                    element={<div style={{width: widthReq}}><Patterns /></div>}
                 />
                     {/*<Route*/}
                 {/*    path="/about-us/aim"*/}
