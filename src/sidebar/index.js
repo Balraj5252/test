@@ -11,6 +11,8 @@ import styled from "styled-components";
 import React, {useState} from "react";
 import * as FaIcons from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import CharacterPrint from "../my/charecterPrint";
+import Patterns from "../my/patterns";
 
 
 const Nav = styled.div`
@@ -75,7 +77,15 @@ const SideMenu = () => {
                     path="/my/table"
                     element={<div><TableData /></div>}
                 />
-                {/*<Route*/}
+                <Route
+                    path="/my/charPrint"
+                    element={<div><CharacterPrint /></div>}
+                />
+                <Route
+                    path="/my/patterns"
+                    element={<div><Patterns /></div>}
+                />
+                    {/*<Route*/}
                 {/*    path="/about-us/aim"*/}
                 {/*    element={<OurAim />}*/}
                 {/*/>*/}
