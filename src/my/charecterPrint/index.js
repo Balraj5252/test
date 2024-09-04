@@ -39,9 +39,9 @@ const CharacterPrint = () => {
         setValue(printValue)
     }
     return (
-        <div>
+        <div style={{margin: "20px", border: '2px solid cornflowerblue', textAlign:"center"}}>
             <span style={{fontSize : "20px", textAlign: "center"}}>
-            <h5>printing the char by number follows</h5>
+            <h3>printing the char by number </h3>
             <p> only takes the input in form of alphabets and numerics no special character is allowed</p>
             <p> example input : a1b4</p>
             <p> example output : abbbb</p>

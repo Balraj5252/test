@@ -102,3 +102,24 @@ span {
   overflow: hidden;
   word-break: break-all;
 }
+
+#content {
+  overflow:auto;
+}
+
+#right {
+  width: 30%;
+  margin:5px;
+  padding: 1em;
+  background: white;
+}
+
+#left {
+  width: 68%;
+  margin:5px;
+  padding: 1em;
+  background: white;
+}
+
+#left   { float:left;  }
+#right   { float:right;  }

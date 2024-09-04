@@ -80,11 +80,11 @@ const SideMenu = () => {
                 />
                 <Route
                     path="/my/table"
-                    element={<TableData />}
+                    element={<div style={{width: widthReq}}><TableData /></div>}
                 />
                 <Route
                     path="/my/charPrint"
-                    element={<CharacterPrint />}
+                    element={<div style={{width: widthReq}}><CharacterPrint /></div>}
                 />
                 <Route
                     path="/my/patterns"
