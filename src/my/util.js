@@ -2,7 +2,7 @@
 
 export const CustomInput = (props) => {
     return (
-        <div style={{marginLeft : "20px",marginTop: "20px", alignContent: " center"}}>
+        <div style={{margin: "20px", alignContent: " center"}}>
             <label style={{fontSize : "20px", marginRight: "20px"}}>
                 {props.props.label}
             </label>
