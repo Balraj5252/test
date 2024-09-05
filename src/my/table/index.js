@@ -3,7 +3,7 @@
 
 
 //let  data = {sno: Number, name: String, surName: String, contact: Number, address: String }
-
+import axios from "axios";
 import {useState} from "react";
 
 let data1 = [
@@ -78,9 +78,21 @@ function TableData() {
     const clickedData = (item) => {
         setSelectedData(item)
     }
+    const getCustomersData = () => {
+        axios
+            .get("http://192.168.0.22:9090/test/questions",
+                {headers: {
+                        Accept: "applicaiton/json",
+                        "Access-Control-Allow-Origin": "*",
+                        "Content-Type": "application/json",
+                    }})
+            .then(data => console.log(data.data))
+            .catch(error => console.log(error));
+    };
     return(
         <div>
             {printData(selectedData)}
+            <button onClick={getCustomersData}> Candidates</button>
             <h5>All The Candidates </h5>
             <table>
                 <thead>
