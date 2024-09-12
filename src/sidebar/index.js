@@ -13,6 +13,7 @@ import * as FaIcons from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import CharacterPrint from "../my/charecterPrint";
 import Patterns from "../my/patterns";
+import Anagrams from "../my/anagrams";
 
 
 const Nav = styled.div`
@@ -89,6 +90,10 @@ const SideMenu = () => {
                 <Route
                     path="/my/patterns"
                     element={<div style={{width: widthReq}}><Patterns /></div>}
+                />
+                <Route
+                    path="/my/anagrams"
+                    element={<div style={{width: widthReq}}><Anagrams /></div>}
                 />
                     {/*<Route*/}
                 {/*    path="/about-us/aim"*/}
